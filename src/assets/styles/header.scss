@@ -1,0 +1,73 @@
+@import "./color.scss";
+.header {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: $tigerlily;
+    padding: 20px;
+    &-logo {
+        display: flex;
+        width: 100%;
+    }
+    &-basket {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        &-icon {
+            position: relative;
+            display: inline-flex;
+            svg {
+                width: 36px;
+                height: 36px;
+                path {
+                    color: $white-color;
+                }
+            }
+        }
+        span.badge.rounded-pill.bg-dark {
+            position: absolute;
+            right: -10px;
+        }
+        button {
+            display: flex;
+            text-align: flex-end;
+            justify-content: flex-end;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+    }
+}
+.basket-cart {
+    &-items {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    &-item {
+        display: flex;
+        width: 100%;
+        min-width: 200px;
+        img {
+            max-width: 100px;
+            object-fit: contain;
+            padding: 10px;
+        }
+        &-text {
+            width: 100%;
+            h2 {
+                padding: 7px 0;
+                font-size: 16px;
+                font-weight: 600;
+                word-wrap: break-word;
+                line-height: 24px;
+            }
+            p {
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 10px;
+            }
+        }
+    }
+}

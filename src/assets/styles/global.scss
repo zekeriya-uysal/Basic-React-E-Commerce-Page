@@ -1,0 +1,38 @@
+@import "color.scss";
+@import "~bootstrap/scss/bootstrap";
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+*,
+*::before,
+*:after {
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    background-color: $white-color;
+}
+button:focus,
+.btn:first-child:active {
+    border-color: transparent !important;
+}
+.btn-primary {
+    --bs-btn-bg: #e15d44;
+    --bs-btn-border-color: #e15d44;
+    --bs-btn-hover-color: #ffff;
+    --bs-btn-hover-bg: #ec9686;
+    --bs-btn-hover-border-color: #ec9686;
+    --bs-btn-focus-shadow-rgb: 0;
+    --bs-btn-active-color: #ffff;
+    --bs-btn-active-bg: #ec9686;
+    --bs-btn-active-border-color: #ec9686;
+    --bs-btn-active-shadow: 0;
+    --bs-btn-disabled-color: #ffff;
+    --bs-btn-disabled-bg: #e15d44;
+    --bs-btn-disabled-border-color: #e15d44;
+}

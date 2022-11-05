@@ -1,0 +1,11 @@
+.container {
+    width: 100%;
+    display: block;
+}
+.product-cart {
+    &-text-input {
+        margin: 0 10px;
+        text-align: center;
+        max-width: 60px;
+    }
+}
